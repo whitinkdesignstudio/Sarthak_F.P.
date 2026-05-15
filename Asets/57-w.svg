@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4500 4500" preserveAspectRatio="xMidYMid meet">
+  <!--
+    SVG wrapper that shows only the left portion of the raster logo (Asets/57.png).
+    Adjust the <rect> width (%) inside the clipPath to reveal more/less of the logo.
+    This keeps the visual identical to the PNG but allows precise masking via SVG.
+  -->
+  <defs>
+    <clipPath id="clipW">
+      <!-- show left ~40% of the image (tune the width value as needed) -->
+      <rect x="0" y="0" width="1800" height="4500" />
+    </clipPath>
+  </defs>
+  <image x="0" y="0" width="4500" height="4500" href="57.png" clip-path="url(#clipW)" preserveAspectRatio="xMidYMid slice" />
+</svg>
